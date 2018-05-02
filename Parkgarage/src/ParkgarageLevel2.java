@@ -19,10 +19,9 @@ public class ParkgarageLevel2 {
 		for (int i = 0; i < parkvorgaenge.length; i++) {
 			int parker = Integer.parseInt(parkvorgaenge[i]);
 
-			if (parker < 0) {
+			if (parker < 0) { // ausparken
 				autosInGarage--;
 				if (warteliste.size() > 0) {
-					System.out.println("Warteliste größe " + warteliste.size());
 					warteliste.remove(0);
 					autosInGarage++;
 				}
